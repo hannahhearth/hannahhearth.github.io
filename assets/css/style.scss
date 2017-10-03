@@ -5,15 +5,15 @@ $hover: #C47F8F;
 
 @font-face {
   font-family: "Steelworks Vintage";
-  src: url('fonts/SteelworksVintageDemo.woff') format('woff'),
-  url('fonts/Steelworks_Vintage_Demo.woff2') format('woff2');
+  src: url('../fonts/SteelworksVintageDemo.woff') format('woff'), url('../fonts/Steelworks_Vintage_Demo.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'acherus grotesque';
-  src: url('fonts/acherus_grotesque_-_regular-webfont.woff2') format('woff2'), url('fonts/acherus_grotesque_-_regular-webfont.woff') format('woff');
+  src: url('../fonts/acherus_grotesque_-_regular-webfont.woff2')
+  format('woff2'), url('../fonts/acherus_grotesque_-_regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -33,7 +33,7 @@ body {
 }
 
 h1 {
-  font-family: "acherus grotesque";
+  font-family: "Steelworks Vintage";
   font-size: 28px;
   margin: 0 0 20px 0;
 
