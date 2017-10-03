@@ -34,8 +34,12 @@ body {
 
 h1 {
   font-family: "acherus grotesque";
-  font-size: 48px;
+  font-size: 28px;
   margin: 0 0 20px 0;
+
+  @media only screen and (min-width: 736px) {
+    font-size: 48px;
+  }
 }
 
 h2 {
@@ -50,10 +54,20 @@ h2 {
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  width: 100%;
+  width: 80%;
+
+  svg {
+    width: 45px;
+    height: 45px;
+  }
 
   @media only screen and (min-width: 736px) {
     width: 500px;
+
+    svg {
+      width: 59px;
+      height: 59px;
+    }
   }
 }
 

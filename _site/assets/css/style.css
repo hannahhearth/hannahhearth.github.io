@@ -4,12 +4,15 @@ body { background-image: linear-gradient(to bottom, #266980 0%, #184960 100%); }
 
 .content { color: #E2AFBB; display: flex; flex-direction: column; justify-content: center; text-align: center; height: 100vh; width: 100wh; }
 
-h1 { font-family: "acherus grotesque"; font-size: 48px; margin: 0 0 20px 0; }
+h1 { font-family: "acherus grotesque"; font-size: 28px; margin: 0 0 20px 0; }
+@media only screen and (min-width: 736px) { h1 { font-size: 48px; } }
 
 h2 { font-family: "acherus grotesque"; font-size: 18px; letter-spacing: 1px; margin: 0 0 40px 0; }
 
-.links { align-items: center; display: flex; justify-content: center; margin: 0 auto; width: 100%; }
-@media only screen and (min-width: 736px) { .links { width: 500px; } }
+.links { align-items: center; display: flex; justify-content: center; margin: 0 auto; width: 80%; }
+.links svg { width: 45px; height: 45px; }
+@media only screen and (min-width: 736px) { .links { width: 500px; }
+  .links svg { width: 59px; height: 59px; } }
 
 .links a { flex: 1; }
 
