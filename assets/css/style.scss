@@ -29,7 +29,7 @@ body {
   justify-content: center;
   text-align: center;
   height: 100vh;
-  width: 100wh;
+  width: 100vw;
 }
 
 h1 {
@@ -50,11 +50,10 @@ h2 {
 }
 
 .links {
-  align-items: center;
-  display: flex;
-  justify-content: center;
+  display: grid;
   margin: 0 auto;
-  width: 80%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
 
   svg {
     width: 45px;
@@ -62,7 +61,8 @@ h2 {
   }
 
   @media only screen and (min-width: 736px) {
-    width: 500px;
+    grid-gap: 10px;
+    min-width: 400px;
 
     svg {
       width: 59px;
