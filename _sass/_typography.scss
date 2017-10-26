@@ -1,5 +1,3 @@
-$header-font: "Assistant", sans-serif;
-
 h1, h2 {
   font-family: $header-font;
 }
@@ -7,13 +5,44 @@ h1, h2 {
 h1 {
   font-size: 2em;
   font-weight: 700;
+}
 
-  &::before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    opacity: 60%;
+.container__left {
+  h1 {
+    margin: 0 0 10px 0;
+
+    &::before {
+      height: 30px;
+      top: 20px;
+    }
+  }
+
+  h3 {
+    margin: 0 0 0 20px;
+
+    &::before {
+      height: 20px;
+      top: 6px;
+
+      @media #{$medium-devices} {
+        top: 10px;
+      }
+    }
+  }
+
+  h1, h3 {
+    position: relative;
+    display: inline-block;
+
+    &::before {
+      background-color: white;
+      content: "";
+      left: -10px;
+      opacity: .6;
+      position: absolute;
+      width: 105%;
+      z-index: -1;
+    }
   }
 }
 
@@ -44,6 +73,10 @@ a {
 }
 
 p, li {
-  font-size: 18px;
+  font-size: 1em;
   letter-spacing: 1px;
+
+  a {
+    color: $pink;
+  }
 }
