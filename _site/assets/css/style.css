@@ -7,7 +7,7 @@ h1 { font-size: 2em; font-weight: 700; }
 .container__left h3 { margin: 0 0 0 20px; }
 .container__left h3::before { height: 20px; top: 6px; }
 @media screen and (min-width: 415px) { .container__left h3::before { top: 10px; } }
-.container__left h1, .container__left h3 { position: relative; display: inline-block; }
+.container__left h1, .container__left h3 { position: relative; display: inline-block; z-index: 0; }
 .container__left h1::before, .container__left h3::before { background-color: white; content: ""; left: -10px; opacity: .6; position: absolute; width: 105%; z-index: -1; }
 
 h2 { font-size: 1em; letter-spacing: 1px; }
