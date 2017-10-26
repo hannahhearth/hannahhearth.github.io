@@ -1,23 +1,32 @@
-@font-face { font-family: "Steelworks Vintage"; src: url("../fonts/SteelworksVintageDemo.woff") format("woff"), url("../fonts/Steelworks_Vintage_Demo.woff2") format("woff2"); font-weight: normal; font-style: normal; }
-@font-face { font-family: 'acherus grotesque'; src: url("../fonts/acherus_grotesque_-_regular-webfont.woff2") format("woff2"), url("../fonts/acherus_grotesque_-_regular-webfont.woff") format("woff"); font-weight: normal; font-style: normal; }
-body { background-image: linear-gradient(to bottom, #266980 0%, #184960 100%); }
+h1, h2 { font-family: "Assistant", sans-serif; }
 
-.content { color: #E2AFBB; display: flex; flex-direction: column; justify-content: center; text-align: center; height: 100vh; width: 100vw; }
+h1 { font-size: 2em; font-weight: 700; }
+h1::before { content: ""; width: 100%; height: 100%; background-color: white; opacity: 60%; }
 
-h1 { font-family: "Steelworks Vintage"; font-size: 28px; margin: 0 0 20px 0; }
-@media only screen and (min-width: 736px) { h1 { font-size: 48px; } }
+h2 { font-size: 1em; letter-spacing: 1px; }
 
-h2 { font-family: "acherus grotesque"; font-size: 18px; letter-spacing: 1px; margin: 0 0 40px 0; }
+h3 { font-family: "Lato", sans-serif; font-size: 1em; letter-spacing: 1px; }
 
-.links { display: grid; margin: 0 auto; grid-template-columns: 1fr 1fr 1fr 1fr; grid-gap: 20px; }
-.links svg { width: 45px; height: 45px; }
-@media only screen and (min-width: 736px) { .links { grid-gap: 10px; min-width: 400px; }
-  .links svg { width: 59px; height: 59px; } }
+a { color: #195A69; text-decoration: none; font-family: "Assistant", sans-serif; font-weight: 600; }
+a:hover, a:active { text-decoration: underline; }
+a.header:hover, a.header:active { text-decoration: none; }
 
-.links a { flex: 1; }
+p, li { font-size: 18px; letter-spacing: 1px; }
 
-.link:hover, .link-stroke:hover { cursor: pointer; }
+html { box-sizing: border-box; color: #195A69; font-family: "Lato", sans-serif; font-size: 100%; overflow: hidden; }
 
-.link:hover path { fill: #C47F8F; }
+*, *::before, *::after { box-sizing: inherit; }
 
-.link-stroke:hover path, .link-stroke:hover circle { stroke: #C47F8F; }
+html, body { height: 100%; }
+
+body { margin: 0; overflow: auto; }
+
+.container { display: grid; grid-template-columns: 1fr 1fr; width: 100%; }
+.container .container__left { background-image: url("/assets/images/ice-cream-1.JPG"); background-repeat: no-repeat; background-position: center; background-size: 100%; height: 100vh; padding: 100px; position: sticky; top: 0; }
+.container .container__right { padding: 100px; }
+
+.nav { display: grid; grid-template-columns: 1fr 1fr 1fr; justify-content: space-between; width: 100%; }
+.nav .portfolio { justify-self: center; }
+.nav .blog { justify-self: end; }
+
+.content { margin-top: 100px; }

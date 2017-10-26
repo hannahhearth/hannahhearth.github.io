@@ -1,0 +1,49 @@
+$header-font: "Assistant", sans-serif;
+
+h1, h2 {
+  font-family: $header-font;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 700;
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 60%;
+  }
+}
+
+h2 {
+  font-size: 1em;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 1em;
+  letter-spacing: 1px;
+}
+
+a {
+  color: $dark-blue;
+  text-decoration: none;
+  font-family: $header-font;
+  font-weight: 600;
+
+  &:hover, &:active {
+    text-decoration: underline;
+  }
+
+  &.header:hover, &.header:active {
+    text-decoration: none;
+  }
+}
+
+p, li {
+  font-size: 18px;
+  letter-spacing: 1px;
+}
