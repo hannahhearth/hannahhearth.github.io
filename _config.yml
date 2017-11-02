@@ -2,3 +2,7 @@ theme: jekyll-theme-minimal
 title: "Hannah Oppenheimer"
 description: "Product Designer, Ice Cream Maker"
 permalink: pretty
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - CNAME
