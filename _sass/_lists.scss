@@ -1,0 +1,12 @@
+.item-subtitle, .item-link {
+  font-size: 1.1em;
+}
+
+.item-subtitle {
+  font-weight: $font-weight-bold;
+}
+
+.item-link {
+  font-family: $header-font;
+  font-weight: $font-weight-bold;
+}

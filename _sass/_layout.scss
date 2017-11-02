@@ -7,40 +7,74 @@
   }
 
   .container__left {
-    background-image: url("/assets/images/ice-cream-1.JPG");
+    background-color: #eee;
+  }
+
+  .container__right, .container__left {
+    padding-right: $small-padding;
+    padding-left: $small-padding;
+
+    @media #{$medium-devices} {
+      padding-right: $medium-padding;
+      padding-left: $medium-padding;
+    }
+
+    @media #{$large-devices} {
+      padding-right: $large-padding;
+      padding-left: $large-padding;
+    }
+  }
+}
+
+.container-header {
+  .container__left {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% auto;
-    height: 30vh;
-    padding: $small-padding;;
     position: sticky;
     top: 0;
 
     @media #{$medium-devices} {
       background-size: auto 100%;
-      height: 100vh;
-      padding: $medium-padding;
     }
 
     @media #{$large-devices} {
       background-size: 100% auto;
-      padding: $large-padding;
+    }
+
+    &-default {
+      height: 30vh;
+
+      @media #{$medium-devices} {
+        height: 100vh;
+      }
+    }
+
+    &.ice_cream_1 {
+      background-image: url("/assets/images/ice-cream-1.JPG");
     }
 
     &.ice_cream_2 {
       background-image: url("/assets/images/ice-cream-2.JPG");
     }
+
+    &.ice_cream_3 {
+      background-image: url("/assets/images/ice-cream-3.png");
+    }
   }
 
-  .container__right {
-    padding: $small-padding;
+  .container__right, .container__left {
+    padding-top: $small-padding;
+    padding-bottom: $small-padding;
 
     @media #{$medium-devices} {
-      padding: $medium-padding;
+      padding-top: $medium-padding;
+      padding-bottom: $medium-padding;
     }
 
     @media #{$large-devices} {
-      padding: $large-padding;
+      padding-top: $large-padding;
+      padding-bottom: $large-padding;
     }
   }
 }
@@ -65,14 +99,37 @@
   }
 }
 
+
 .content {
-  margin-top: $small-padding;
+  &-post {
+    padding: 0 $small-padding 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    width: 100%;
 
-  @media #{$medium-devices} {
-    margin-top: $medium-padding;
+    @media #{$medium-devices} {
+      padding: 0 $medium-padding 0;
+    }
+
+    @media #{$large-devices} {
+      padding: 0 $large-padding 0;
+    }
   }
 
-  @media #{$large-devices} {
-    margin-top: $large-padding;
+  &-default {
+    margin-top: $small-padding;
+
+    @media #{$medium-devices} {
+      margin-top: $medium-padding;
+    }
+
+    @media #{$large-devices} {
+      margin-top: $large-padding;
+    }
   }
+}
+
+.item {
+  margin-bottom: $large-padding;
 }
