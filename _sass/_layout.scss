@@ -26,6 +26,10 @@
       background-size: 100% auto;
       padding: $large-padding;
     }
+
+    &.ice_cream_2 {
+      background-image: url("/assets/images/ice-cream-2.JPG");
+    }
   }
 
   .container__right {
@@ -54,6 +58,10 @@
 
   .blog {
     justify-self: end;
+  }
+
+  .active {
+    text-decoration: underline;
   }
 }
 

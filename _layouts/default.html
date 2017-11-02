@@ -15,16 +15,16 @@
   </head>
   <body>
     <div class="container">
-      <div class="container__left">
+      <div class="container__left {{ page.sidebar_image }}">
         <a href="/" class="header"><h1>{{ site.title}}</h1></a>
         <h3 class="subtitle">{{ site.description }}</h3>
       </div>
 
       <div class="container__right">
         <nav class="nav subtitle">
-          <a href="/">About</a>
+          <a href="/" {% if page.url == "/" %}class="active"{% endif %}>About</a>
           <a href="https://www.dribbble.com/opihana" target="_blank" class="portfolio">Portfolio</a>
-          <a href="/blog" class="blog">Blog</a>
+          <a href="/blog/" class="blog{% if page.url == "/blog/" %} active{% endif %}">Blog</a>
         </nav>
 
         <div class="content">
