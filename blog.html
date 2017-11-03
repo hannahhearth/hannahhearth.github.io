@@ -2,4 +2,12 @@
 layout: default
 sidebar_image: ice_cream_6
 ---
-<h2>Coming Soon!</h2>
+
+{% for post in site.posts %}
+<div class="item">
+  <a href="{{ post.url }}"><h2 class="item-title">{{ post.title }}</h2></a>
+  <h3 class="item-subtitle">{{ post.date | date_to_long_string }}</h3>
+  <p>{{ post.description }}</p>
+  <a class="item-link" href="{{ post.url }}">See more</a>
+</div>
+{% endfor %}
