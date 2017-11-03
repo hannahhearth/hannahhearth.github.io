@@ -17,6 +17,8 @@
     <div class="container container-header">
       <div class="container__left">
         <a href="/" class="header"><h1>{{ site.title}}</h1></a>
+          <br>
+        <h3 class="subtitle">{{ site.description }}</h3>
       </div>
 
       <div class="container__right">
@@ -26,10 +28,11 @@
           <a href="/blog/" class="blog{% if page.url == "/blog/" %} active{% endif %}">Blog</a>
         </nav>
       </div>
-
     </div>
 
-    {{ content }}
+    <div class="container container-banner">
+      {{ content }}
+    </div>
 
     <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
   </body>

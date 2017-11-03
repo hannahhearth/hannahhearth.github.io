@@ -3,10 +3,12 @@
   margin: $medium-padding auto;
 }
 
-.post-images img {
+img {
   width: 100%;
-  margin-bottom: $medium-padding;
-  border-radius: 5px;
+}
+
+.container__right img {
+  margin: $medium-padding 0;
 }
 
 .post-videos {
