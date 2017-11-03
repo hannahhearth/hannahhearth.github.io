@@ -1,7 +1,7 @@
 .container {
   width: 100%;
 
-  @media #{$medium-devices} {
+  @media #{$large-devices} {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -30,22 +30,14 @@
   .container__left {
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100% auto;
+    background-size: cover;
     position: sticky;
     top: 0;
-
-    @media #{$medium-devices} {
-      background-size: auto 100%;
-    }
-
-    @media #{$large-devices} {
-      background-size: 100% auto;
-    }
 
     &-default {
       height: 30vh;
 
-      @media #{$medium-devices} {
+      @media #{$large-devices} {
         height: 100vh;
       }
     }
@@ -128,8 +120,4 @@
       margin-top: $large-padding;
     }
   }
-}
-
-.item {
-  margin-bottom: $large-padding;
 }

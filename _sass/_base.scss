@@ -2,9 +2,15 @@ html {
   box-sizing: border-box;
   color: $dark-blue;
   font-family: "Lato", sans-serif;
-  font-size: 100%;
+  font-size: 14px;
+  letter-spacing: .5px;
   overflow: hidden;
   -webkit-font-smoothing: antialiased;
+
+  @media #{$large-devices} {
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
 }
 
 *,

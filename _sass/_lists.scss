@@ -1,3 +1,11 @@
+.item {
+  margin-bottom: $medium-padding;
+
+  @media #{$large-devices} {
+    margin-bottom: $large-padding;
+  }
+}
+
 .item-subtitle, .item-link {
   font-size: 1.1em;
 }
