@@ -1,0 +1,65 @@
+.soccer-pen {
+  color: black;
+  font-family: "Permanent Marker";
+  font-size: 2em;
+  margin: 0 auto;
+  text-align: center;
+
+  .container {
+    &--section {
+      margin-bottom: 1em;
+    }
+  }
+
+  .container--choice {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .container--field {
+    background-color: #206C3F;
+    border-radius: 10px;
+    color: #fff;
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 10px;
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .player, label {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .player-goalkeeper {
+    grid-row: span 12; 
+  }
+
+  .player-one, .player-two, .player-three, .player-four, .player-five, .player-six, .player-seven, .player-eight {
+    grid-row: span 3;
+  }
+
+  .player-nine, .player-ten {
+    grid-row: span 6;
+  }
+
+  input[type=radio] {
+    visibility: hidden;
+    position: absolute;
+
+    &:checked + span:before {
+      content: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="86" height="79" viewBox="0 0 86 79"><path fill="none" stroke="#000" stroke-linecap="round" stroke-opacity=".763" stroke-width="4" d="M24.275 22.274c-4.16 5.035-8.976 9.593-12.48 15.105C-1.973 59.035-5.756 82.195 31.068 75.928c22.084-3.759 58.421-29.763 51.918-56.953-4.652-19.45-45.289-21.323-60.008-9.03C10.552 20.325 9.242 37.38 18.914 45.368"/></svg>');
+      position: absolute;
+      top: -10px;
+      left: -20px;
+    }
+  }
+
+  span {
+    cursor: pointer;
+    position: relative;
+  }
+}

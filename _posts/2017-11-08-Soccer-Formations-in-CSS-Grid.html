@@ -1,0 +1,111 @@
+---
+layout: post
+title:  "Soccer Formations in CSS Grid"
+date:   2017-11-08
+description: "I’ve been having a ball playing around with CSS Grid. To kick
+off my first blog post, here's how I implemented a few popular soccer
+formations using one flexible CSS Grid."
+---
+
+<section>
+  <h2 class="item-title">Soccer Formations in CSS Grid</h2>
+  <h3 class="item-subtitle">08 November 2017</h3>
+</section>
+
+<section>
+  <p>I’ve been having a ball playing around with CSS Grid. To kick
+off my first blog post, here's how I implemented a few popular soccer
+formations using one flexible CSS Grid.</p>
+
+  <p>Because I’m a designer, I naturally started with a sketch on paper
+  with marker, visually thinking through how I would layout out players on a
+  grid.</p>
+</section>
+
+  <img src="/assets/images/blog/soccer-1.JPG">
+
+  <section>
+<p>I decided to go with three formations:
+
+<ul>
+  <li>4-4-2</li>
+  <li>4-3-3</li>
+  <li>3-4-3</li>
+</ul>
+<p>Then, I implemented each formation on Codepen. I needed a grid with 4
+columns (goalkeeper, defenders, mid-fielders, and forwards) for each
+formation. But the minimum number of columns varied between the formations.
+</p>
+
+<p>For example, for 4-4-2, I would need a minimum 4 rows, because each
+defender and mid-fielder would take up 4 rows, and the 2 forwards could each
+take up 2 rows.</p>
+  </section>
+
+<p data-height="372" data-theme-id="light" data-slug-hash="YEpJvY"
+data-default-tab="result" data-user="opihana" data-embed-version="2"
+data-pen-title="4-4-2 Soccer Formation in CSS Grid" class="codepen">See the Pen
+<a href="https://codepen.io/opihana/pen/YEpJvY/">4-4-2 Soccer Formation in CSS
+  Grid</a> by Hannah Oppenheimer (<a
+  href="https://codepen.io/opihana">@opihana</a>) on <a
+  href="https://codepen.io">CodePen</a>.</p>
+<script async
+src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+<section>
+<p>But, for 3-4-3 and 4-3-3, I would need a minimum of 12 rows because 12 was the
+lowest common multiplier for my columns that would have 3 or 4 players in
+them.</p>
+</section>
+
+<p data-height="366" data-theme-id="light" data-slug-hash="qVqJQj"
+data-default-tab="result" data-user="opihana" data-embed-version="2"
+data-pen-title="3-4-3 Soccer Formation in CSS Grid" class="codepen">See the Pen
+<a href="https://codepen.io/opihana/pen/qVqJQj/">3-4-3 Soccer Formation in CSS
+  Grid</a> by Hannah Oppenheimer (<a
+  href="https://codepen.io/opihana">@opihana</a>) on <a
+  href="https://codepen.io">CodePen</a>.</p>
+<script async
+src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+<section>
+  <p>So, in my first implementation, I used a unique set of
+  <code>grid-template-rows</code> on
+the container for the field. One had 4 rows and the others had 12
+rows.</p>
+  <p>Now, I wanted to be able to toggle between each formation on a
+single codepen. I realized I had a choice about the grid contianer because of 
+the varied number of rows. I could:</p>
+
+<ul>
+  <li>keep the grids distinct for each formation and change the grid container
+    layout in javascript, or</li>
+<li>find a common grid container layout that would work for all my formations, and
+  only use javascript to change the players’ locations in that grid</li>
+</ul>
+
+<p>I chose the second option. My goal was to only change how many rows each player
+would span, and to NOT change the grid itself. So, I had to consider “lowest
+common multiplier” challenge again. For all the formations, that number was
+12.
+
+<p>So for a soccer field on which players would move, but the field would stay the
+same, I needed 4 columns and 12 rows. And this is the end result.</p>
+</section>
+
+<p data-height="675" data-theme-id="light" data-slug-hash="eedmQO"
+data-default-tab="result" data-user="opihana" data-embed-version="2"
+data-pen-title="Soccer Formations in CSS Grid" class="codepen">See the Pen <a
+  href="https://codepen.io/opihana/pen/eedmQO/">Soccer Formations in CSS
+  Grid</a> by Hannah Oppenheimer (<a
+  href="https://codepen.io/opihana">@opihana</a>) on <a
+  href="https://codepen.io">CodePen</a>.</p>
+<script async
+  src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+<section>
+
+<p>*All puns intended in the first paragraph</p>
+
+</section>
+</div>

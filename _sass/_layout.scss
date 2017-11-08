@@ -122,33 +122,18 @@
   }
 }
 
+section {
+  margin: $small-padding 0;
+}
 
-.content {
-  &-post {
-    padding: 0 $small-padding 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: space-between;
-    width: 100%;
+.content-default {
+  margin-top: $small-padding;
 
-    @media #{$medium-devices} {
-      padding: 0 $medium-padding 0;
-    }
-
-    @media #{$large-devices} {
-      padding: 0 $large-padding 0;
-    }
+  @media #{$medium-devices} {
+    margin-top: $medium-padding;
   }
 
-  &-default {
-    margin-top: $small-padding;
-
-    @media #{$medium-devices} {
-      margin-top: $medium-padding;
-    }
-
-    @media #{$large-devices} {
-      margin-top: $large-padding;
-    }
+  @media #{$large-devices} {
+    margin-top: $large-padding;
   }
 }

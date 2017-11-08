@@ -1,14 +1,37 @@
-.container-centered {
-  width: 40%;
-  margin: $medium-padding auto;
-}
+.content-post {
+  margin: 0 auto;
+  text-align: center;
 
-img {
-  width: 100%;
-}
+  @media #{$medium-devices} {
+    width: 70%;
+  }
 
-.container__right img {
-  margin: $medium-padding 0;
+  section {
+    width: 80%;
+    margin: 0 auto;
+    padding: $small-padding;
+
+    @media #{$medium-devices} {
+      padding: $small-padding $medium-padding;
+    }
+
+    @media #{$large-devices} {
+      padding: $small-padding $large-padding;
+    }
+  }
+
+  & h2, h3 {
+    text-align: center;
+  }
+
+  img {
+    max-height: 400px;
+    max-width: 100%;
+  }
+
+  p, ul {
+    text-align: left;
+  }
 }
 
 .post-videos {
