@@ -6,3 +6,4 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - CNAME
+google_analytics: "UA-109421091-1"
