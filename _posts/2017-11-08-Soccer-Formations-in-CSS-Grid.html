@@ -17,15 +17,19 @@ formations using one flexible CSS Grid."
 off my first blog post, here's how I implemented a few popular soccer
 formations using one flexible CSS Grid.</p>
 
-  <p>Because I’m a designer, I naturally started with a sketch on paper
-  with marker, visually thinking through how I would layout out players on a
-  grid.</p>
+  <p>I started with a sketch on paper with marker, visually thinking through how
+  I would lay out players on a grid.</p>
 </section>
 
   <img src="/assets/images/blog/soccer-1.JPG">
 
   <section>
-<p>I decided to go with three formations:
+<p>In soccer, there are a bunch of ways teams can strategically position
+their 11 players on a field. While there's always a goalkeeper, a team might choose
+a specific formation for the rest of their crew depending on how fast their star
+forward is, or how many quality defenders there are, or (in cases not covered by
+this post) when the team is playing down a player or so, due to penalties. I
+decided to go with three popular formations:
 
 <ul>
   <li>4-4-2</li>
@@ -54,8 +58,7 @@ src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 <section>
 <p>But, for 3-4-3 and 4-3-3, I would need a minimum of 12 rows because 12 was the
-lowest common multiplier for my columns that would have 3 or 4 players in
-them.</p>
+lowest common product of numbers 4 and 3.</p>
 </section>
 
 <p data-height="366" data-theme-id="light" data-slug-hash="qVqJQj"
@@ -74,7 +77,7 @@ src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 the container for the field. One had 4 rows and the others had 12
 rows.</p>
   <p>Now, I wanted to be able to toggle between each formation on a
-single codepen. I realized I had a choice about the grid contianer because of 
+single codepen. I realized I had a choice about the grid container because of 
 the varied number of rows. I could:</p>
 
 <ul>
@@ -86,7 +89,7 @@ the varied number of rows. I could:</p>
 
 <p>I chose the second option. My goal was to only change how many rows each player
 would span, and to NOT change the grid itself. So, I had to consider “lowest
-common multiplier” challenge again. For all the formations, that number was
+common product” challenge again. For all the formations, that number was
 12.
 
 <p>So for a soccer field on which players would move, but the field would stay the
@@ -104,8 +107,12 @@ data-pen-title="Soccer Formations in CSS Grid" class="codepen">See the Pen <a
   src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 <section>
-
-<p>*All puns intended in the first paragraph</p>
-
+  <p>I enjoyed the challenge of making this Codepen, and love playing with CSS
+  Grid. If you have any questions, go ahead and ask me on <a
+  target="_blank" href="https://twitter.com/opihana">twitter</a>. If you're in need of
+  design, or front-end development, I might be available for contract work. <a
+  href="mailto:Hannah@opihana.com">Email
+  me.</a></p>
+  <p>*All puns intended in the first paragraph</p>
 </section>
 </div>
