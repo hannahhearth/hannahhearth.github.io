@@ -4,12 +4,24 @@ sidebar_image: ice_cream_6
 ---
 
 <div class="item">
+  <a href="https://medium.com/hashicorp-design/10-questions-to-ask-when-applying-for-a-remote-job-1e640ca4f6b3">
+    <h2 class="item-title">10 Questions to Ask When Applying for a Remote Job</h2></a>
+  <h3 class="item-subtitle">19 October 2018</h3>
+  <p>Make sure you understand the company's remote practices before you take on
+  this exciting opportunity.</p>
+  <a class="item-link"
+     href="https://medium.com/hashicorp-design/10-questions-to-ask-when-applying-for-a-remote-job-1e640ca4f6b3">Read
+     on Medium</a>
+</div>
+
+<div class="item">
   <a href="https://medium.com/hashicorp-design/how-to-run-design-exercises-on-a-remote-team-a233825f2313"><h2 class="item-title">How to Run Design Exercises on a Remote
       Team</h2></a>
   <h3 class="item-subtitle">19 October 2018</h3>
   <p>I am here to tell you a little secret: design collaboration can happen remotely.</p>
   <a class="item-link"
-     href="https://medium.com/hashicorp-design/how-to-run-design-exercises-on-a-remote-team-a233825f2313">See more</a>
+     href="https://medium.com/hashicorp-design/how-to-run-design-exercises-on-a-remote-team-a233825f2313">Read
+  on Medium</a>
 </div>
 
 {% for post in site.posts %}
@@ -17,6 +29,6 @@ sidebar_image: ice_cream_6
   <a href="{{ post.url }}"><h2 class="item-title">{{ post.title }}</h2></a>
   <h3 class="item-subtitle">{{ post.date | date_to_long_string }}</h3>
   <p>{{ post.description }}</p>
-  <a class="item-link" href="{{ post.url }}">See more</a>
+  <a class="item-link" href="{{ post.url }}">Read the post</a>
 </div>
 {% endfor %}
