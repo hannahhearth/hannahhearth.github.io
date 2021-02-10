@@ -1,27 +1,29 @@
 ---
-layout: post
-sidebar_image: ice_cream_1
-title: A little bit about me
-description: I’m Hannah Hearth, a design leader based in Austin Texas. I’m a Design Manager at HashiCorp, focused on our service mesh networking software, Consul.
+layout: default
 ---
 
-<p>I enjoy using this forum to write articles about designing in my industry.
-There don’t seem to be a lot of designers in this niche--this intersection of
-devops, networking, IT security, infrastructure software, developer tooling,
-containerization, etc.</p>
+<div class="item">
+  <h3 class="item-subtitle">15 May 2019</h3>
+  <a href="https://medium.com/hashicorp-design/10-questions-to-ask-when-applying-for-a-remote-job-1e640ca4f6b3">
+    <h1 class="item-title">10 Questions to Ask When Applying for a Remote
+      Job</h1></a>
+  <h2>Make sure you understand the company's remote practices before you take on
+  this exciting opportunity.</h2>
+</div>
 
-<p>The blog and dribbblesque content of the design world is largely driven by
-visual designs of consumer-facing apps, leaving in the shadows so much UX work
-that goes into making those applications run in the first place.</p>
+<div class="item">
+  <h3 class="item-subtitle">19 October 2018</h3>
+  <a
+    href="https://medium.com/hashicorp-design/how-to-run-design-exercises-on-a-remote-team-a233825f2313"><h1 class="item-title">How to Run Design Exercises on a Remote
+      Team</h1></a>
+  <h2>I am here to tell you a little secret: design collaboration can happen
+    remotely.</h2>
+</div>
 
-<p>So this blog is a tribute to those “unflashy designs”, user experiences
-crafted for the folks who spend their days buried in log output or API
-documentation. I hope some of this content helps designers in the
-infra-sec-dev-ops space find some guidance and camaraderie, or, that it helps
-engineers build more user friendly IT software.</p>
-
-<p>Outside of work and blogging, I much prefer to be outdoors: hiking, biking,
-skiing, woodworking, gardening. I also love being in the kitchen, making wild
-ice cream flavors or interesting sourdough breads. I live with my small but
-growing family, largely centered around our pathetically needy pit bull,
-Zeke.</p>
+{% for post in site.posts %}
+<div class="item">
+  <h3 class="item-subtitle">{{ post.date | date_to_long_string }}</h3>
+  <a href="{{ post.url }}"><h1 class="item-title">{{ post.title }}</h1></a>
+  <h2>{{ post.description }}</h2>
+</div>
+{% endfor %}

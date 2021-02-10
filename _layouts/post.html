@@ -1,41 +1,10 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta property="og:title" content="{{ page.title }}">
-    <title>{{ page.title }} by {{ site.title}}</title>
-    {% include analytics.html %}
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <link rel="icon" type="image/png" href="/favicon.png">
-    <meta name="viewport" content="width=device-width">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="container container-header">
-      <nav class="nav subtitle">
-        <a href="/blog/">Hannah Hearth</a>
-        <div class="links">
-          <a href="/blog/" class="{% if page.url == "/" %}active{% endif %}">Blog</a>
-          <a href="/">About</a>
-        </div>
-      </nav>
-      <div class="container__right">
-        <div class="content-default">
-          <div class="item">
-            <h3 class="item-subtitle">{{ page.date | date_to_long_string }}</h3>
-            <h1 class="item-title">{{ page.title }}</h1>
-            <h2>{{ page.description }}</h2>
-          </div>
-          {{ content }}
-        </div>
-      </div>
-    </div>
+---
+layout: default
+---
 
-    <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
-  </body>
-</html>
+<div class="item">
+  <h3 class="item-subtitle">{{ page.date | date_to_long_string }}</h3>
+  <h1 class="item-title">{{ page.title }}</h1>
+  <h2>{{ page.description }}</h2>
+</div>
+{{ content }}
