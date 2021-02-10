@@ -1,5 +1,5 @@
 html {
-  font-weight: $font-weight-medium;
+  font-weight: $font-weight-small;
 }
 
 h1, h2, h3, h4 {
@@ -19,10 +19,10 @@ h1 {
 h2 {
   font-size: $font-size-medium;
   margin-bottom: $small-padding;
+  font-weight: $font-weight-small;
 
   @media #{$small-devices} {
     font-size: $font-size-small;
-    font-weight: $font-weight-small;
   }
 }
 
