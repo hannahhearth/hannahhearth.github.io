@@ -1,21 +1,9 @@
 .item {
-  margin-bottom: $medium-padding;
-
-  @media #{$large-devices} {
-    margin-bottom: $large-padding;
-  }
-}
-
-.item-subtitle, .item-link {
-  font-size: 1.1em;
-}
-
-.item-subtitle {
-  font-weight: $font-weight-bold;
-  margin-top: $small-padding / 3;
+  padding: $medium-padding 0;
 }
 
 .item-link {
   font-family: $header-font;
+  font-size: 1.1em;
   font-weight: $font-weight-bold;
 }

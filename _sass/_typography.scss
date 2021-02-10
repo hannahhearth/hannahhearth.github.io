@@ -1,79 +1,45 @@
+html {
+  font-weight: $font-weight-medium;
+}
+
 h1, h2, h3, h4 {
   margin: 0;
 }
 
-h1, h2 {
-  font-family: $header-font;
-}
-
 h1 {
-  font-size: 2em;
   font-weight: $font-weight-bold;
-}
+  font-size: $font-size-large;
+  margin-bottom: $small-padding;
 
-.container__left {
-  h1 {
-    margin: 0 0 10px 0;
-
-    &::before {
-      height: 30px;
-      top: 15px;
-    }
-  }
-
-  h3 {
-    margin: 0 0 0 20px;
-
-    &::before {
-      height: 20px;
-      top: 6px;
-
-      @media #{$medium-devices} {
-        top: 5px;
-      }
-    }
-  }
-
-  h1, h3 {
-    position: relative;
-    display: inline-block;
-    z-index: 0;
-
-    &::before {
-      background-color: white;
-      content: "";
-      left: -10px;
-      opacity: .6;
-      position: absolute;
-      width: 105%;
-      z-index: -1;
-    }
-  }
-}
-
-h2, h3, p, li {
-  letter-spacing: 0.5px;
-
-  @media #{$large-devices} {
-    letter-spacing: 1px;
+  @media #{$small-devices} {
+    font-size: $font-size-medium;
   }
 }
 
 h2 {
-  font-size: 1.9em;
-  font-weight: $font-weight-medium;
+  font-size: $font-size-medium;
+  margin-bottom: $small-padding;
+
+  @media #{$small-devices} {
+    font-size: $font-size-small;
+    font-weight: $font-weight-small;
+  }
 }
 
 h3 {
-  font-family: "Lato", sans-serif;
-  font-size: 1em;
+  color: $orange;
+  font-size: $font-size-small;
+  font-weight: $font-weight-bold;
+  margin-bottom: $small-padding;
+
+  @media #{$small-devices} {
+    font-size: $font-size-extra-small;
+  }
 }
 
 a {
   color: $dark-blue;
   text-decoration: none;
-  font-family: $header-font;
-  font-weight: $font-weight-medium;
 
   &:hover, &:active {
     text-decoration: underline;
@@ -85,11 +51,7 @@ a {
 }
 
 p, li {
-  font-size: 1em;
-
-  a {
-    color: $pink;
-  }
+  font-size: $font-size-medium;
 }
 
 code {

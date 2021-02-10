@@ -1,14 +1,23 @@
-$hover: #C47F8F;
-$pink: #E57189;
-$dark-blue: #195A69;
-
-$header-font: "Assistant", sans-serif;
-$font-weight-medium: 600;
-$font-weight-bold: 700;
-
+$small-devices: "only screen and (max-width: 489px)";
 $medium-devices: "screen and (min-width: 415px)";
 $large-devices: "screen and (min-width: 769px)";
 
-$small-padding: 30px;
-$medium-padding: 60px;
-$large-padding: 100px;
+$hover: #C47F8F;
+$dark-blue: #003F63;
+$orange: #B5872F;
+
+$header-font: "Rubik", sans-serif;
+
+$font-size-extra-small: 14px;
+$font-size-small: 16px;
+$font-size-medium: 20px;
+$font-size-large: 36px;
+
+$font-weight-small: lighter;
+$font-weight-medium: 600;
+$font-weight-bold: 800;
+
+$small-padding: 12px;
+$medium-padding: $small-padding * 2;
+$large-padding: $medium-padding * 2;
+$extra-large-padding: $large-padding * 2;

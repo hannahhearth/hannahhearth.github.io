@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta property="og:title" content="{{ page.title }}">
     <title>{{ page.title }} by {{ site.title}}</title>
     {% include analytics.html %}
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Assistant:400,600,700" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="icon" type="image/png" href="/favicon.png">
     <meta name="viewport" content="width=device-width">
@@ -16,19 +17,14 @@
   </head>
   <body>
     <div class="container container-header">
-      <div class="container__left container__left-default {{ page.sidebar_image }}">
-        <a href="/" class="header"><h1>{{ site.title}}</h1></a>
-          <br>
-        <h3 class="subtitle">{{ site.description }}</h3>
-      </div>
-
+      <nav class="nav subtitle">
+        <a href="/blog/">Hannah Hearth</a>
+        <div class="links">
+          <a href="/blog/" class="{% if page.url == "/" %}active{% endif %}">Blog</a>
+          <a href="/">About</a>
+        </div>
+      </nav>
       <div class="container__right">
-        <nav class="nav subtitle">
-          <a href="/" class="{% if page.url == "/" %}active{% endif %}">About</a>
-          <a href="/portfolio/index.html" class="portfolio{% if page.url == "/portfolio/" %} active{% endif %}">Portfolio</a>
-          <a href="/blog/" class="blog{% if page.url == "/blog/" %} active{% endif %}">Blog</a>
-        </nav>
-
         <div class="content-default">
           {{ content }}
         </div>
