@@ -20,16 +20,6 @@
   }
 }
 
-.container__post {
-  animation: slide-up .25s ease-in;
-  max-width: 1420px;
-  padding: 0 $extra-large-padding;
-
-  @media #{$small-devices} {
-    padding: 0 $medium-padding;
-  }
-}
-
 .container__title {
   animation: slide-up .25s ease-in;
   padding: $extra-large-padding 0 0;

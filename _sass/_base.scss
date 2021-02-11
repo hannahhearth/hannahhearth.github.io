@@ -21,7 +21,16 @@ body {
 
 body {
   margin: 0;
+  padding-bottom: $extra-large-padding;
   overflow: auto;
+
+  @media #{$small-devices} {
+    padding-bottom: $medium-padding;
+  }
+}
+
+img {
+  max-width: 100%;
 }
 
 @keyframes slide-up {
