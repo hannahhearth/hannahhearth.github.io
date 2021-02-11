@@ -11,21 +11,36 @@
 .header {
   padding: $extra-large-padding $extra-large-padding 0;
 
+  @media #{$small-devices} {
+    padding: $medium-padding $medium-padding 0;
+  }
+
   &__bg {
     background-color: #F2F5F6;
   }
 }
 
 .container__post {
+  animation: slide-up .25s ease-in;
   max-width: 1420px;
   padding: 0 $extra-large-padding;
+
+  @media #{$small-devices} {
+    padding: 0 $medium-padding;
+  }
 }
 
 .container__title {
+  animation: slide-up .25s ease-in;
   padding: $extra-large-padding 0 0;
+
+  @media #{$small-devices} {
+    padding: $medium-padding 0 0;
+  }
 }
 
 .container__content {
+  animation: slide-up .25s ease-in;
   padding: $extra-large-padding $extra-large-padding 0;
 
   @media #{$small-devices} {

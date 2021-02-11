@@ -1,5 +1,5 @@
 html {
-  font-weight: $font-weight-small;
+  font-weight: $font-weight-extra-small;
 }
 
 h1, h2, h3, h4 {
@@ -20,10 +20,6 @@ h2 {
   font-size: $font-size-medium;
   margin-bottom: $small-padding;
   font-weight: $font-weight-medium;
-
-  @media #{$small-devices} {
-    font-size: $font-size-small;
-  }
 }
 
 h3 {
@@ -61,6 +57,7 @@ a {
 
     &:hover {
       background: #003F6310;
+      color: $dark-blue;
     }
   }
 }
@@ -87,7 +84,11 @@ code {
   display: block;
   font-size: $font-size-small;
   font-weight: $font-weight-extra-small;
-  margin: $large-padding 0;
+  margin: $medium-padding 0 $large-padding;
+
+  @media #{$small-devices} {
+    margin: $small-padding 0 $medium-padding;
+  }
 
   &:before {
     content: "";

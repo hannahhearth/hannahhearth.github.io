@@ -1,4 +1,5 @@
 .item {
+  animation: slide-up .5s ease-in;
   padding: $medium-padding 0;
 
   @media #{$small-devices} {
