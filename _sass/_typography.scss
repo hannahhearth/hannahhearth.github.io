@@ -48,6 +48,19 @@ a {
   &.header:hover, &.header:active {
     text-decoration: none;
   }
+
+  h1 {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    padding: $small-padding;
+    margin: -$small-padding;
+    border-radius: 6px;
+
+    &:hover {
+      background: #003F6310;
+    }
+  }
 }
 
 p, li {
