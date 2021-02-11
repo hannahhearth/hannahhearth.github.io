@@ -1,5 +1,9 @@
 .item {
   padding: $medium-padding 0;
+
+  @media #{$small-devices} {
+    padding: $small-padding 0;
+  }
 }
 
 .item-link {
