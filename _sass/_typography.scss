@@ -19,7 +19,7 @@ h1 {
 h2 {
   font-size: $font-size-medium;
   margin-bottom: $small-padding;
-  font-weight: $font-weight-small;
+  font-weight: $font-weight-medium;
 
   @media #{$small-devices} {
     font-size: $font-size-small;
@@ -40,9 +40,11 @@ h3 {
 a {
   color: $dark-blue;
   text-decoration: none;
+  font-weight: $font-weight-medium;
 
   &:hover, &:active {
-    text-decoration: underline;
+    color: $orange;
+    text-decoration: none;
   }
 
   &.header:hover, &.header:active {
@@ -81,3 +83,19 @@ code {
   padding-left: $small-padding;
 }
 
+.note {
+  display: block;
+  font-size: $font-size-small;
+  font-weight: $font-weight-extra-small;
+  margin: $large-padding 0;
+
+  &:before {
+    content: "";
+    background: url("/favicon-16.png") no-repeat;
+    display: inline-block;
+    height: 16px;
+    margin-right: $small-padding;
+    vertical-align: middle;
+    width: 16px;
+  }
+}

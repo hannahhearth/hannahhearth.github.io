@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<div class="container header">
+  <nav class="nav">
+    <a href="/">Hannah Hearth</a>
+    <div class="links">
+      <a href="/" class="{% if page.url == "/" %}active{% endif %}">Blog</a>
+      <a href="/about">About</a>
+    </div>
+  </nav>
+</div>
+
+<div class="container">
+  {{ content }}
+</div>

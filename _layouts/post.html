@@ -2,9 +2,26 @@
 layout: default
 ---
 
-<div class="item">
-  <h3 class="item-subtitle">{{ page.date | date_to_long_string }}</h3>
-  <h1 class="item-title">{{ page.title }}</h1>
-  <h2 class="post-description">{{ page.description }}</h2>
+<div class="container header header__bg">
+  <nav class="nav">
+    <a href="/">Hannah Hearth</a>
+    <div class="links">
+      <a href="/" class="{% if page.url == "/" %}active{% endif %}">Blog</a>
+      <a href="/about">About</a>
+    </div>
+  </nav>
+
+  <div class="container__title">
+    <div class="item">
+      <h3 class="item-subtitle">{{ page.date | date_to_long_string }}</h3>
+      <h1 class="item-title">{{ page.title }}</h1>
+      <h2 class="post-description">{{ page.description }}</h2>
+    </div>
+  </div>
 </div>
-{{ content }}
+
+<div class="container">
+  <div class="container__post">
+    {{ content }}
+  </div>
+</div>

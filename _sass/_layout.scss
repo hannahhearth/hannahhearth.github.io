@@ -1,7 +1,6 @@
 .container {
   margin: 0 auto;
   max-width: 1920px;
-  padding: $extra-large-padding;
   width: 100%;
 
   @media #{$small-devices} {
@@ -9,8 +8,25 @@
   }
 }
 
+.header {
+  padding: $extra-large-padding $extra-large-padding 0;
+
+  &__bg {
+    background-color: #F2F5F6;
+  }
+}
+
+.container__post {
+  max-width: 1420px;
+  padding: 0 $extra-large-padding;
+}
+
+.container__title {
+  padding: $extra-large-padding 0 0;
+}
+
 .container__content {
-  padding: $extra-large-padding 0;
+  padding: $extra-large-padding $extra-large-padding 0;
 
   @media #{$small-devices} {
     padding: $medium-padding 0;
@@ -19,10 +35,10 @@
 
 .nav {
   display: grid;
-  grid-template-columns: 4fr 1fr;
-  width: 100%;
   font-size: $font-size-medium;
   font-weight: $font-weight-medium;
+  grid-template-columns: 4fr 1fr;
+  width: 100%;
 
   a:hover {
     color: $orange;

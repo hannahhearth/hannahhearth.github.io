@@ -16,20 +16,9 @@
     <![endif]-->
   </head>
   <body>
-    <div class="container">
 
-      <nav class="nav">
-        <a href="/">Hannah Hearth</a>
-        <div class="links">
-          <a href="/" class="{% if page.url == "/" %}active{% endif %}">Blog</a>
-          <a href="/about">About</a>
-        </div>
-      </nav>
+    {{ content }}
 
-      <div class="container__content">
-        {{ content }}
-      </div>
-    </div>
     <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
   </body>
 </html>
