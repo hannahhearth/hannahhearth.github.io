@@ -19,6 +19,22 @@
 
     {{ content }}
 
+
+    <div class="container">
+      <div class="container__newsletter">
+        <form action="https://tinyletter.com/hannahhearth" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/hannahhearth', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+          <h2>Sign up for my email newsletter</h2>
+          <p>Receive an email update each time I publish a new article. I don't post
+          often, and will never spam you with messages unrelated to my blog
+          posts.</p>
+          <label for="tlemail">Email address</label>
+          <input type="text" name="email" id="tlemail" />
+          <input type="hidden" value="1" name="embed"/>
+          <input type="submit" value="Subscribe" />
+        </form>
+      </div>
+    </div>
+
     <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
   </body>
 </html>

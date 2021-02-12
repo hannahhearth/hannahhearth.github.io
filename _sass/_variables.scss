@@ -5,6 +5,8 @@ $large-devices: "screen and (min-width: 769px)";
 $hover: #C47F8F;
 $dark-blue: #003F63;
 $orange: #B5872F;
+$light-grey: #003F6310;
+$off-white: #FFFDF9;
 
 $header-font: "Rubik", sans-serif;
 
@@ -19,7 +21,10 @@ $font-weight-small: 400;
 $font-weight-medium: 600;
 $font-weight-bold: 800;
 
+$extra-small-padding: 6px;
 $small-padding: 12px;
 $medium-padding: $small-padding * 2;
 $large-padding: $medium-padding * 2;
 $extra-large-padding: $large-padding * 3;
+
+$border-radius: 4px;

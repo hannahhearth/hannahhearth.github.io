@@ -29,6 +29,15 @@
   }
 }
 
+.container__newsletter {
+  animation: slide-up .25s ease-in;
+  padding: 0 $extra-large-padding;
+
+  @media #{$small-devices} {
+    padding: 0;
+  }
+}
+
 .container__content {
   animation: slide-up .25s ease-in;
   padding: $extra-large-padding $extra-large-padding 0;

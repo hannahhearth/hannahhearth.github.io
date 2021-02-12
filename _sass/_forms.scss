@@ -1,0 +1,40 @@
+input {
+  flex: 1;
+  height: 50px;
+  margin-bottom: $small-padding;
+  border-color: $light-grey;
+
+  &[type=submit] {
+    background-color: $dark-blue;
+    color: white;
+    border-radius: $border-radius;
+    font-weight: $font-weight-medium;
+    font-size: $font-size-small;
+    height: 50px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+label {
+  font-size: $font-size-small;
+  font-weight: $font-weight-small;
+  margin-bottom: $extra-small-padding;
+}
+
+form {
+  display: grid;
+  background-color: $light-grey;
+  border-radius: $border-radius;
+  margin-top: $large-padding;
+  padding: $large-padding;
+  width: 50%;
+
+  @media #{$small-devices} {
+    margin-top: $medium-padding;
+    padding: $medium-padding;
+    width: 100%;
+  }
+}
