@@ -4,7 +4,7 @@
   padding: $large-padding $extra-large-padding 0;
 
   @media #{$small-devices} {
-    padding: 0 $medium-padding;
+    padding: 0;
   }
 }
 
