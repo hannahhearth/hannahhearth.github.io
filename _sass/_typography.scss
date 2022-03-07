@@ -65,6 +65,10 @@ a {
 
 p, li {
   font-size: $font-size-medium;
+
+  @media #{$small-devices} {
+    font-size: $font-size-small;
+  }
 }
 
 code {
@@ -102,7 +106,7 @@ code {
   }
 }
 
-.item p {
+p {
   margin-top: 10px;
 
   @media #{$small-devices} {
