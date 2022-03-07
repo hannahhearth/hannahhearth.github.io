@@ -11,16 +11,16 @@ h1 {
   font-weight: $font-weight-bold;
   font-size: $font-size-extra-large;
   margin-bottom: $small-padding;
-
-  @media #{$small-devices} {
-    font-size: $font-size-large;
-  }
 }
 
 h2 {
   font-size: $font-size-medium;
   margin-bottom: $small-padding;
   font-weight: $font-weight-medium;
+
+  @media #{$small-devices} {
+    font-size: $font-size-small;
+  }
 }
 
 h3 {
@@ -104,4 +104,8 @@ code {
 
 .item p {
   margin-top: 10px;
+
+  @media #{$small-devices} {
+    font-size: $font-size-small;
+  }
 }
