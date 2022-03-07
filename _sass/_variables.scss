@@ -2,17 +2,19 @@ $small-devices: "only screen and (max-width: 489px)";
 $medium-devices: "screen and (min-width: 415px)";
 $large-devices: "screen and (min-width: 769px)";
 
+$font-color-base: #45606f;
 $hover: #C47F8F;
-$dark-blue: #003F63;
-$orange: #B5872F;
-$light-grey: #003F6310;
+$dark-blue: #45606f;
+$orange: #76a1b3;
+$light-grey: #003f630a;
 $off-white: #FFFDF9;
 
-$header-font: "Rubik", sans-serif;
+$header-font: "Sansita Swashed", serif;
+$body-font: "Noto Serif", serif;
 
 $font-size-extra-small: 14px;
 $font-size-small: 16px;
-$font-size-medium: 20px;
+$font-size-medium: 22px;
 $font-size-large: 24px;
 $font-size-extra-large: 36px;
 

@@ -1,8 +1,8 @@
 html {
   background-color: #FFFDF9;
   box-sizing: border-box;
-  color: $dark-blue;
-  font-family: $header-font, sans-serif;
+  color: $font-color-base;
+  font-family: $body-font;
   font-size: 14px;
   overflow: hidden;
   -webkit-font-smoothing: antialiased;
@@ -23,6 +23,7 @@ body {
   margin: 0;
   padding-bottom: $extra-large-padding;
   overflow: auto;
+  line-height: 1.4;
 
   @media #{$small-devices} {
     padding-bottom: $medium-padding;

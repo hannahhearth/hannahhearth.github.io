@@ -7,6 +7,7 @@ h1, h2, h3, h4 {
 }
 
 h1 {
+  font-family: $header-font;
   font-weight: $font-weight-bold;
   font-size: $font-size-extra-large;
   margin-bottom: $small-padding;
@@ -34,7 +35,7 @@ h3 {
 }
 
 a {
-  color: $dark-blue;
+  color: $font-color-base;
   text-decoration: none;
   font-weight: $font-weight-medium;
 
@@ -99,4 +100,8 @@ code {
     vertical-align: middle;
     width: 16px;
   }
+}
+
+.item p {
+  margin-top: 10px;
 }
