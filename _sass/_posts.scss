@@ -1,10 +1,19 @@
 .container__post {
   animation: slide-up .25s ease-in;
   max-width: 1420px;
-  padding: $large-padding $extra-large-padding 0;
+  flex: 2;
+}
+
+.container__title {
+  animation: slide-up .25s ease-in;
+  flex: 1;
+}
+
+.container__post, .container__title {
+  padding: $extra-large-padding 0;
 
   @media #{$small-devices} {
-    padding: 0;
+    padding: $medium-padding 0 0;
   }
 }
 

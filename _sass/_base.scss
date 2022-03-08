@@ -1,5 +1,5 @@
 html {
-  background-color: #FFFDF9;
+  background-color: #121214;
   box-sizing: border-box;
   color: $font-color-base;
   font-family: $body-font;
@@ -21,12 +21,12 @@ body {
 
 body {
   margin: 0;
-  padding-bottom: $extra-large-padding;
+  padding: $extra-large-padding $extra-large-padding 0;
   overflow: auto;
   line-height: 1.4;
 
   @media #{$small-devices} {
-    padding-bottom: $medium-padding;
+    padding: $medium-padding $medium-padding 0;
   }
 }
 

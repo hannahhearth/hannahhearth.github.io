@@ -6,9 +6,8 @@ title: Blog
 <div class="container__content">
   {% for post in site.posts %}
   <div class="item">
-    <h3 class="item-subtitle">{{ post.date | date_to_long_string }}</h3>
     <a href="{{ post.url }}"><h1 class="item-title">{{ post.title }}</h1></a>
-    <p>{{ post.description }}</p>
+    <p><i>{{ post.date | date_to_long_string }}</i> - {{ post.description }}</p>
   </div>
   {% endfor %}
 </div>

@@ -16,7 +16,6 @@ h1 {
 h2 {
   font-size: $font-size-medium;
   margin-bottom: $small-padding;
-  font-weight: $font-weight-medium;
 
   @media #{$small-devices} {
     font-size: $font-size-small;
@@ -24,7 +23,7 @@ h2 {
 }
 
 h3 {
-  color: $orange;
+  font-style: italic;
   font-size: $font-size-small;
   font-weight: $font-weight-bold;
   margin-bottom: $small-padding;
@@ -55,16 +54,11 @@ a {
     padding: $small-padding;
     margin: -$small-padding;
     border-radius: 6px;
-
-    &:hover {
-      background: $light-grey;
-      color: $dark-blue;
-    }
   }
 }
 
 p, li {
-  font-size: $font-size-medium;
+  font-size: $font-size-large;
 
   @media #{$small-devices} {
     font-size: $font-size-small;
@@ -72,7 +66,7 @@ p, li {
 }
 
 code {
-  background-color: $dark-blue;
+  background-color: $grey;
   color: #fff;
   border-radius: 3px;
   padding-left: 5px;
@@ -107,9 +101,13 @@ code {
 }
 
 p {
-  margin-top: 10px;
+  margin: 10px 0 40px;
 
   @media #{$small-devices} {
     font-size: $font-size-small;
   }
+}
+
+.nav {
+  font-family: $header-font;
 }

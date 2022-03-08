@@ -5,7 +5,7 @@ input {
   border-color: $light-grey;
 
   &[type=submit] {
-    background-color: $dark-blue;
+    background-color: $grey;
     color: white;
     border-radius: $border-radius;
     font-weight: $font-weight-medium;
@@ -29,7 +29,6 @@ form {
   background-color: $light-grey;
   border-radius: $border-radius;
   margin-top: $large-padding;
-  padding: $large-padding;
   width: 50%;
 
   @media #{$small-devices} {

@@ -1,8 +1,7 @@
 ---
 layout: default
 ---
-
-<div class="container header header__bg">
+<div class="container header">
   <nav class="nav">
     <a href="/">Hannah Hearth</a>
     <div class="links">
@@ -10,19 +9,28 @@ layout: default
       <a href="/about">About</a>
     </div>
   </nav>
-
-  <div class="container__title">
-    <div class="item">
-      <h3 class="item-subtitle">{{ page.date | date_to_long_string }}</h3>
-      <h1 class="item-title">{{ page.title }}</h1>
-      <h2 class="post-description">{{ page.description }}</h2>
-    </div>
-  </div>
 </div>
 
+
 <div class="container">
+  <div class="container__title">
+    <h1 class="item-title">{{ page.title }}</h1>
+    <p><i>{{ page.date | date_to_long_string }}</i></p>
+  </div>
   <div class="container__post">
     {{ content }}
 
+      <div class="container__newsletter">
+        <form action="https://tinyletter.com/hannahhearth" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/hannahhearth', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+          <h2>Sign up for my email newsletter</h2>
+          <p>Receive an email update each time I publish a new article. I don't post
+          often, and will never spam you with messages unrelated to my blog
+          posts.</p>
+          <label for="tlemail">Email address</label>
+          <input type="text" name="email" id="tlemail" />
+          <input type="hidden" value="1" name="embed"/>
+          <input type="submit" value="Subscribe" />
+        </form>
+      </div>
   </div>
 </div>
