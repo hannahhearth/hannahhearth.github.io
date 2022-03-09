@@ -14,8 +14,9 @@ h1 {
 }
 
 h2 {
-  font-size: $font-size-medium;
-  margin-bottom: $small-padding;
+  font-family: $header-font;
+  font-size: $font-size-extra-large;
+  margin: $large-padding 0 $small-padding;
 
   @media #{$small-devices} {
     font-size: $font-size-small;
