@@ -1,6 +1,7 @@
 theme: jekyll-theme-minimal
 title: "Hannah Hearth"
 description: "Product Design Leader"
+base_url: https://hannahhearth.com/
 permalink: pretty
 exclude:
   - Gemfile
