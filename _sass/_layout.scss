@@ -33,6 +33,10 @@
   }
 }
 
+.container__end {
+  padding-bottom: $extra-large-padding;
+}
+
 .nav {
   display: grid;
   font-size: $font-size-medium;
